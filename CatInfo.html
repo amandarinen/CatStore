@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kattbutik: About us</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="CatStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<header class="navbar"> 
+    <nav>
+        <ul>
+            <li><a href="HomePage.html"><i class="fa-solid fa-paw"></i> Home</a> </li>
+            <li><a href="OwnerInfo.html"><i class="fa-solid fa-paw"></i> About us</a> </li>
+            <li><a href="CatInfo.html"><i class="fa-solid fa-paw"></i> Our cats</a> </li>
+            <li><a href="Cart.html"><i class="fa-solid fa-paw"></i> Cart</a> </li>
+
+        </ul>   
+    </nav>
+</header>
+
+<div class="hero-cat">
+<h1 id="myHeader">Our Cats</h1>
+</div>
+
+<input type="text" id="searchbar" placeholder="Search for race or country..." oninput="currentPage = 1; showCats()">
+
+<div id="cat-container"></div>
+<div class="pagination">
+  <button id="prev-btn" onclick="prevPage()">«</button>
+  <span id="page-info"></span>
+  <button id="next-btn" onclick="nextPage()">»</button>
+</div>
+
+<script src="Script.js"></script>
+
+<footer id="footer-text">
+    <p> Contact us: 08-123456789</p>
+</footer>
+
+</body>
+</html>
