@@ -3,6 +3,7 @@ let currentPage = 1;
 const perPage = 10;
 
 async function FetchCats() {
+  document.getElementById("cat-container").innerHTML = "<p>Loading awesome cats... :3</p>";
   const response = await fetch("https://api.thecatapi.com/v1/images/search?limit=30&has_breeds=1&api_key=live_TmEsriTI8wfPjZquOmWA8RW1E9NPDirz7nMzyHbci96bFbrvvf0nA3hBhHU5ocEf");
   cats = await response.json();
   showCats();

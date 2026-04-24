@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Kattbutik</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="CartStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -12,10 +13,10 @@
 <header class="navbar"> 
     <nav>
         <ul>
-            <li><a href="HomePage.html"><i class="fa-solid fa-paw"></i> Home</a> </li>
-            <li><a href="OwnerInfo.html"><i class="fa-solid fa-paw"></i> About us</a> </li>
-            <li><a href="CatInfo.html"><i class="fa-solid fa-paw"></i> Our cats</a> </li>
-            <li><a href="Cart.html"><i class="fa-solid fa-paw"></i> Cart</a> </li>
+            <li><a href="HomePage.html"><i class="fa-solid fa-paw"></i> Home</a></li>
+            <li><a href="OwnerInfo.html"><i class="fa-solid fa-paw"></i> About us</a></li>
+            <li><a href="CatInfo.html"><i class="fa-solid fa-paw"></i> Our cats</a></li>
+            <li><a href="Cart.html"><i class="fa-solid fa-paw"></i> Cart</a></li>
         </ul>   
     </nav>
 </header>
@@ -26,15 +27,31 @@
 
 <main>
     <section>
-        <p id="textParagraph">This is your cart</p>
+        <p id="textParagraph">This is your cart:</p>
     </section>
 </main>
 
 <div id="cart-container"></div>
+
+<div id="cart-form">
+  <form>
+    <label for="fname">Full name:</label>
+    <input type="text" id="fname" name="fname">
+
+    <label for="mail">Mail address:</label>
+    <input type="text" id="mail" name="mail">
+
+    <label for="shippingaddress">Shipping Address:</label>
+    <input type="text" id="shippingaddress" name="shippingaddress">
+
+    <input type="submit" value="Checkout" onclick="checkout()">
+  </form>
+</div>
+
 <script src="CartScript.js"></script>
 
 <footer id="footer-text">
-    <p> Contact us: 08-123456789</p>
+    <p>Contact us: 08-123456789</p>
 </footer>
 
 </body>
