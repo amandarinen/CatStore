@@ -13,10 +13,23 @@ function showCart() {
       <img src="${cat.url}">
       <p>${breed.name}</p>
       <p>${breed.origin}</p>
+      <button>Remove</button>
     `;
+    
+    div.querySelector("button").addEventListener("click", function() {
+      removeFromCart(cat);
+    });
 
     container.appendChild(div);
   });
+}
+
+function removeFromCart(cat) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart = cart.filter(c => c.id !== cat.id);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  document.getElementById("cart-container").innerHTML = "";
+  showCart();
 }
 
 function checkout() {

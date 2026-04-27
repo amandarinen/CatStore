@@ -69,6 +69,12 @@ function searchCats() {
 
 function addToCart(cat) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  if (cart.some(c => c.id === cat.id)) {
+    alert("This cat is already in your cart!");
+    return;
+  }
+  
   cart.push(cat);
   localStorage.setItem("cart", JSON.stringify(cart));
   alert("Added cat to cart!");
