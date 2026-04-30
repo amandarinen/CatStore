@@ -33,9 +33,16 @@ function removeFromCart(cat) {
 }
 
 function checkout() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const catnames = cart.map(cat => cat.breeds[0].name).join(", ");
+
+  const name = document.getElementById("fname").value;
+  const mail = document.getElementById("mail").value;
+  const address = document.getElementById("shippingaddress").value;
+
   localStorage.clear();
   document.getElementById("cart-container").innerHTML = "";
-  alert("Checkout done! Thank you! :3");
+  alert(`Checkout done! Thank you! :3\nYour order: ${catnames}. \nYour information: \nName: ${name} \nEmail: ${mail} \nAddress: ${address}`);
 }
 
 showCart();
