@@ -16,7 +16,7 @@ body {
 }
 
 #textParagraph {
-    color: gray;
+    color: rgb(68, 64, 64);
     text-align: center;
     padding: 14px 16px;
 }
@@ -30,7 +30,7 @@ body {
     position: fixed;
     width: 100%;
     justify-content: center;
-    background-color: lightcoral;
+    background-color: rgb(240, 166, 166);
     }
 
     ul li {
@@ -39,7 +39,7 @@ body {
 
     ul li a {
     display: block;
-    color: lightyellow;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -55,17 +55,20 @@ body {
 }
 
 .about-us h3 {
-    color: lightcoral;
+    color: rgb(68, 64, 64);
+    background-color: rgb(240, 166, 166);
+    padding: 4px 8px;
+    display: inline-block;
 }
 
 .about-us p {
-    color: gray;
+    color: rgb(68, 64, 64);
 }
 
 #footer-text {
     text-align: center;
-    background-color: lightcoral;
-    color: lightyellow;
+    background-color: rgb(240, 166, 166);
+    color: black;
     bottom: 0;
     width: 100%;
     padding: 2px;

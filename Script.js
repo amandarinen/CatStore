@@ -23,7 +23,7 @@ function showCats() {
     const breed = cat.breeds[0];
     const div = document.createElement("div");
     div.innerHTML = `
-      <img src="${cat.url}" width="200">
+      <img src="${cat.url}" alt="" width="200">
       <p>${breed.name}</p>
       <p>${breed.origin}</p>
       <button>Add to cart</button>
@@ -74,7 +74,7 @@ function addToCart(cat) {
     alert("This cat is already in your cart!");
     return;
   }
-  
+
   cart.push(cat);
   localStorage.setItem("cart", JSON.stringify(cart));
   alert("Added cat to cart!");

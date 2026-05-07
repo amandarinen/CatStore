@@ -23,15 +23,15 @@
 }
 
 #cat-container p {
-  color: rgb(98, 93, 93);
+  color: rgb(68, 64, 64);
   margin: 5px 0;
 }
 
 #cat-container button {
   margin-top: auto;
   padding: 8px 16px;
-  background-color: lightcoral;
-  color: lightyellow;
+  background-color: rgb(240, 166, 166);
+  color: black;
   border: none;
   border-radius: 25px;
   font-size: 14px;
@@ -59,6 +59,14 @@
   border-color: black;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -68,8 +76,8 @@
 }
 
 .pagination button {
-  background-color: pink;
-  color: lightyellow;
+  background-color: rgb(240, 166, 166);
+  color: black;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -90,7 +98,7 @@
 
 #page-info {
   font-family: Georgia, serif;
-  color: pink;
+  color: black;
   font-size: 18px;
 }
 

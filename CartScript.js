@@ -10,7 +10,7 @@ function showCart() {
     const div = document.createElement("div");
 
     div.innerHTML = `
-      <img src="${cat.url}">
+      <img src="${cat.url}" alt="">
       <p>${breed.name}</p>
       <p>${breed.origin}</p>
       <button>Remove</button>

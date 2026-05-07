@@ -22,8 +22,8 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: lightcoral;
-  color: lightyellow;
+  background-color: rgb(240, 166, 166);
+  color: black;
   padding: 14px;
   margin: 8px 0;
   border: none;
@@ -63,15 +63,15 @@ input[type=submit]:hover {
 
 #cart-container p {
   text-align: center;
-  color: rgb(98, 93, 93);
+  color: rgb(68, 64, 64);
   margin: 5px 0;
 }
 
 #cart-container button {
   margin-top: auto;
   padding: 8px 16px;
-  background-color: lightcoral;
-  color: lightyellow;
+  background-color: rgb(240, 166, 166);
+  color: black;
   border: none;
   border-radius: 25px;
   font-size: 14px;
